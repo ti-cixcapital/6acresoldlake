@@ -1,0 +1,393 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    font-family: Space Grotesk, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilizando o Header */
+header {
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+header h1 {
+    font-size: 4.0rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+header p {
+    font-size: 2.0rem;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Menu de Navegação */
+nav {
+    margin-top: 40px;
+}
+
+nav .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav .menu li {
+    display: inline-block;
+}
+
+nav .menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav .menu a:hover {
+    background-color: #ec6608;
+    color: white;
+}
+
+img {
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+form input, form textarea, form button {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #EC6609;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Estilo padrão para telas grandes (Desktop) */
+#imagem img {
+    width: 100%;
+    max-width: 2000px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Esconde a imagem recortada para telas maiores (Desktop) */
+#imagem #imagem-recorte {
+    display: none;
+}
+
+/* Remove os bullet points da lista */
+#detalhes ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Ajuste para telas menores (smartphones e tablets) */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 10px 0;
+    }
+    header h1 {
+        font-size: 2.0rem; /* Reduz tamanho do título */
+    }
+    header p {
+        font-size: 1.2rem; /* Reduz tamanho da descrição */
+    }
+    header .logo {
+        width: 150px; /* Reduz o tamanho do logo */
+    }
+
+    /* Menu */
+    nav .menu {
+        flex-direction: column; /* Menu em coluna */
+        gap: 10px; /* Espaçamento menor */
+    }
+    nav .menu a {
+        font-size: 0.9rem; /* Reduz tamanho da fonte do menu */
+        padding: 8px 12px; /* Ajusta o padding */
+    }
+
+    /* Imagens */
+    #imagem img {
+        width: 100%; /* Garante que a imagem ocupe a largura da tela */
+    }
+    #imagem #imagem-recorte {
+        display: block; /* Exibe imagem recortada */
+        margin: 0 auto;
+    }
+    #imagem #imagem-original {
+        display: none; /* Esconde imagem original */
+    }
+
+    /* Seções */
+    section {
+        padding: 10px; /* Reduz o padding das seções */
+    }
+
+    /* Formulários */
+    form input, form textarea, form button {
+        width: 95%; /* Reduz largura dos elementos */
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+}
+/* Ajuste para telas menores (smartphones e tablets) */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 10px 0;
+    }
+    header h1 {
+        font-size: 2.0rem; /* Reduz tamanho do título */
+    }
+    header p {
+        font-size: 1.2rem; /* Reduz tamanho da descrição */
+    }
+    header .logo {
+        width: 150px; /* Reduz o tamanho do logo */
+    }
+
+    /* Menu */
+    nav .menu {
+        flex-direction: column; /* Menu em coluna */
+        gap: 10px; /* Espaçamento menor */
+    }
+    nav .menu a {
+        font-size: 0.9rem; /* Reduz tamanho da fonte do menu */
+        padding: 8px 12px; /* Ajusta o padding */
+    }
+
+    /* Imagens */
+    #imagem img {
+        width: 100%; /* Garante que a imagem ocupe a largura da tela */
+    }
+    #imagem #imagem-recorte {
+        display: block; /* Exibe imagem recortada */
+        margin: 0 auto;
+    }
+    #imagem #imagem-original {
+        display: none; /* Esconde imagem original */
+    }
+
+    /* Seções */
+    section {
+        padding: 10px; /* Reduz o padding das seções */
+    }
+
+    /* Lista na seção "permitted uses" */
+    #permitted-uses ul {
+        display: flex;
+        flex-direction: column; /* Organiza os itens em uma única coluna */
+        gap: 10px; /* Adiciona espaçamento entre os itens */
+        padding: 0; /* Remove padding padrão */
+        margin: 0 auto; /* Centraliza a lista */
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+
+    #permitted-uses li {
+        font-size: 1rem; /* Reduz tamanho da fonte para dispositivos móveis */
+        line-height: 1.4; /* Melhora a leitura */
+        margin: 5px 0; /* Espaçamento entre os itens */
+    }
+
+    /* Formulários */
+    form input, form textarea, form button {
+        width: 95%; /* Reduz largura dos elementos */
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+}
+/* Ajuste para a seção "Permitted Uses" em dispositivos menores */
+@media (max-width: 768px) {
+    #permitted-uses div {
+        display: flex; /* Muda o grid para flex */
+        flex-direction: column; /* Organiza os itens em coluna única */
+        gap: 20px; /* Espaçamento entre as listas */
+    }
+
+    #permitted-uses ul {
+        padding: 0; /* Remove padding padrão */
+        margin: 0; /* Remove margem */
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+
+    #permitted-uses li {
+        font-size: 1rem; /* Ajusta o tamanho da fonte */
+        margin-bottom: 5px; /* Espaçamento entre itens */
+    }
+}/* Seção "Permitted Uses" - Estilo padrão para telas maiores (3 colunas) */
+#permitted-uses div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 40px; /* Espaçamento entre as colunas */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#permitted-uses ul {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+/* Ajuste para telas menores (coluna única) */
+@media (max-width: 768px) {
+    #permitted-uses div {
+        display: flex; /* Muda o grid para flex */
+        flex-direction: column; /* Organiza os itens em coluna única */
+        gap: 20px; /* Espaçamento entre as listas */
+    }
+
+    #permitted-uses ul {
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+
+    #permitted-uses li {
+        font-size: 1rem; /* Ajusta o tamanho da fonte */
+        margin-bottom: 5px; /* Espaçamento entre itens */
+    }
+}
+/* Centraliza a caixa laranja na seção "Contact Us" em dispositivos menores */
+@media (max-width: 768px) {
+    #contato div {
+        display: flex;
+        flex-direction: column; /* Organiza os elementos em coluna */
+        align-items: center; /* Centraliza os elementos horizontalmente */
+        gap: 20px; /* Espaçamento entre os elementos */
+    }
+
+    #contato div > div {
+        margin: 0 auto; /* Remove o margin-left e centraliza */
+        width: 90%; /* Ajusta a largura da caixa laranja */
+        max-width: 400px; /* Limita a largura máxima */
+    }
+}
+/* Estilos para a seção Contact Us */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px; /* Espaçamento entre os elementos */
+    flex-wrap: wrap; /* Permite que os elementos quebrem em telas menores */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-box {
+    background-color: #EC6608; /* Cor da caixa laranja */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-box h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-form {
+    flex: 2;
+    min-width: 300px;
+    box-sizing: border-box;
+}
+
+/* Centralização em dispositivos móveis */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Coloca os elementos em coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
+    }
+
+    .contact-box, .contact-form {
+        width: 90%; /* Reduz a largura */
+        max-width: 400px; /* Define uma largura máxima */
+    }
+}
+/* Adiciona bullet points apenas para a seção "Permitted Uses" */
+#permitted-uses ul {
+    list-style-type: disc; /* Adiciona bullets padrão (círculos) */
+    padding-left: 20px; /* Espaçamento à esquerda para alinhar bullets */
+    margin: 0;
+}
+
+#permitted-uses li {
+    margin-bottom: 5px; /* Espaçamento entre os itens */
+}
+
+/* Ajuste adicional para dispositivos móveis */
+@media (max-width: 768px) {
+    #permitted-uses ul {
+        list-style-type: disc; /* Mantém bullets em dispositivos móveis */
+        padding-left: 20px; /* Espaçamento para alinhamento */
+    }
+}
+/* Força a exibição dos bullets apenas na seção "Permitted Uses" */
+#permitted-uses ul {
+    list-style-type: disc !important; /* Garante bullets circulares */
+    padding-left: 20px; /* Espaçamento à esquerda */
+    margin: 0;
+}
+
+#permitted-uses li {
+    margin-bottom: 5px; /* Espaçamento entre itens da lista */
+}
+
