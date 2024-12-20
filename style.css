@@ -391,3 +391,140 @@ form button:hover {
     margin-bottom: 5px; /* Espaçamento entre itens da lista */
 }
 
+/* Centraliza a seção de contato */
+.contact-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que ocupa toda a altura da janela */
+    gap: 40px; /* Espaçamento entre os elementos */
+    flex-wrap: wrap; /* Permite que os elementos quebrem em telas menores */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos da caixa de contato */
+.contact-box {
+    background-color: #EC6608; /* Cor da caixa laranja */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Centralização em dispositivos móveis */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Coloca os elementos em coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
+    }
+
+    .contact-box, .contact-form {
+        width: 90%; /* Reduz a largura */
+        max-width: 400px; /* Define uma largura máxima */
+    }
+}
+/* Estilização para a seção de contato */
+#contato {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que a seção ocupe a altura da tela */
+    background-color: #f9f9f9; /* Cor de fundo */
+    text-align: center; /* Centraliza o texto */
+    margin: 0; /* Remove margens externas */
+    padding: 0; /* Remove preenchimentos extras */
+    flex-direction: column; /* Garante alinhamento vertical no conteúdo */
+}
+
+/* Estilização para a caixa de contato */
+.contact-box {
+    background-color: #EC6608; /* Cor da caixa */
+    color: white; /* Texto branco */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    max-width: 400px; /* Largura máxima */
+    width: 90%; /* Ocupa 90% da largura da tela em dispositivos pequenos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+}
+
+/* Reseta estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do Body */
+body {
+    font-family: Space Grotesk, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    height: 100vh; /* Garante 100% da altura */
+}
+
+/* Estilização para a seção de contato */
+#contato {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    min-height: 100vh; /* Altura mínima de 100% da janela */
+    background-color: #f9f9f9; /* Cor de fundo */
+    text-align: center;
+    margin: 0;
+}
+
+/* Estilização da caixa de contato */
+.contact-box {
+    background-color: #EC6608; /* Cor laranja */
+    color: white; /* Texto branco */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    max-width: 400px; /* Largura máxima */
+    width: 90%; /* Ocupa 90% da largura em dispositivos menores */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+}
+/* Ajuste do espaçamento entre o título e a caixa de contato */
+#contato h2 {
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo do título */
+    font-size: 2rem; /* Ajuste opcional para o tamanho do título */
+}
+
+#contato p {
+    margin-bottom: 30px; /* Espaçamento entre o parágrafo e a caixa */
+}
+
+/* Ajuste do espaçamento externo da seção de contato */
+#contato {
+    margin-top: 10px; /* Reduz o espaçamento acima da seção */
+    margin-bottom: 10px; /* Reduz o espaçamento abaixo da seção */
+}
+/* Ajuste do container da seção de contato */
+#contato {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    align-items: center; /* Centraliza horizontalmente o conteúdo */
+    padding: 40px 20px; /* Espaçamento interno (superior/inferior e laterais) */
+    background-color: #f9f9f9; /* Cor de fundo */
+    text-align: center;
+    margin: 20px auto; /* Margens externas reduzidas acima e abaixo */
+    height: auto; /* Garante que a altura da seção se ajuste ao conteúdo */
+    min-height: unset; /* Remove a altura mínima (100vh) */
+}
+
+/* Ajuste do título da seção */
+#contato h2 {
+    margin-top: 10px; /* Margem mínima acima do título */
+    margin-bottom: 20px; /* Espaço entre o título e o parágrafo */
+    font-size: 2rem; /* Tamanho do título (opcional) */
+}
+
+/* Ajuste do parágrafo e da caixa */
+#contato p {
+    margin-bottom: 20px; /* Espaçamento entre o parágrafo e a caixa */
+}
